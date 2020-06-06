@@ -29,7 +29,7 @@ package array;
     总结：这个问题的最初考虑使用数组去记录当前计算出来的数字的每一位，然后翻转，至于边界问题，想的也复杂了，
          下面的写法将空间复杂度降到了最低（不用去新建数组去开销内存）
  */
-public class ReverseNum {
+public class ReverseIntNum {
 
     public static void main(String[] args) {
         System.out.println(reverse(-513));
