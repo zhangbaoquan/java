@@ -5,7 +5,11 @@ package tree;
  */
 public class TreeNode {
 
-    public String data;
+    public int data;
     public TreeNode leftChild;
     public TreeNode rightChild;
+
+    TreeNode(int x) {
+        data = x;
+    }
 }
