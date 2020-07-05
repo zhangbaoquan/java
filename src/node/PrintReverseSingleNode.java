@@ -32,7 +32,11 @@ public class PrintReverseSingleNode {
         singleOne2.next = singleOne3;
         singleOne3.next = singleOne4;
         singleOne4.next = singleOne5;
-        printReverseSingleNode(singleOne1);
+//        printReverseSingleNode(singleOne1);
+        int[] num = reversePrint(singleOne1);
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i]);
+        }
     }
 
     private static void printReverseSingleNode(SingleNode head){
@@ -44,5 +48,26 @@ public class PrintReverseSingleNode {
         while (!stack.empty()){
             System.out.print(stack.pop());
         }
+    }
+
+    /**
+     * 按照LeetCode 要求，返回一个数组
+     * @param head 链表
+     * @return 返回数组
+     */
+    public static int[] reversePrint(SingleNode head) {
+        Stack<Integer> stack = new Stack<>();
+        int size = 0;
+        while (head != null){
+            size++;
+            stack.push(head.data);
+            head = head.next;
+        }
+        int[] num = new int[size];
+        int index = 0;
+        while (!stack.empty()){
+            num[index++] = stack.pop();
+        }
+        return num;
     }
 }
