@@ -95,6 +95,23 @@ public class ReverseSingleNode {
         }
     }
 
+    /**
+     * 递归法
+     * 1、使用递归函数，一直递归到链表的最后一个结点，该结点就是反转后的头结点，记作 ret
+       2、
+       3、
+     * @param head 头结点
+     * @return 链表
+     */
+//    public static SingleNode reverseSingleNode3(SingleNode head){
+//        if (head == null || head.next == null){
+//            return head;
+//        }
+//        SingleNode node = reverseSingleNode3(head.next);
+//
+//    }
+
+
 }
 
 
