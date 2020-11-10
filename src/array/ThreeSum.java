@@ -69,7 +69,7 @@ public class ThreeSum {
                     list.add(nums[right]);
                     list.add(nums[left]);
                     data.add(list);
-                    // 去重，将当前数的左右两边相同的数全部去重
+                    // 去重，判断左右边界是否和下一个数重复，将当前数的左右两边相同的数全部去重
                     while (left < right && nums[left] == nums[left + 1]) left++;
                     while (left < right && nums[right] == nums[right - 1]) right--;
                     left++;
