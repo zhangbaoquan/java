@@ -26,6 +26,8 @@ public class FindKNode {
 
     /**
      * 使用双指针法
+     * 时间复杂度：O(n)
+     * 空间复杂度：O(1)
      * latter 与尾节点距离 k−1，即 latter 指向倒数第 k 个节点
      * @param head 目标链表
      * @param k 倒数第K 个数
