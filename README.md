@@ -9,9 +9,17 @@
 * 整理算法目录信息
 
 ### 链表：
-1、链表的基本操作                                           （BasicDoubleNode）
+1、链表的基本操作                                            (BasicDoubleNode）
 2、两个链表的数字相加                                        （TowNodePlus）
-3、翻转单链表                                               （ReverseSingleNode）
+3、翻转单链表                                                (ReverseSingleNode）
+4、两个链表的第一个公共节点                                    (GetIntersectionNode)
+5、合并两个排序链表                                           (CombineNode）
+6、判断链表中是否有环                                         (RingNode)
+7、求链表中倒数第K个节点                                      (FindKNode）
+8、删除指定的链表节点                                         (DeleteNode）
+9、从尾到头打印链表                                          （PrintReverseSingleNode）
+10、合并一个链表数组的所有链表                                 （mergeNode）
+
 
 ### 字符串：
 1、字符串替换                                               （ReplaceSpace）
