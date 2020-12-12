@@ -37,6 +37,7 @@
 ### 树：
 1、翻转二叉树                                               （ReverseTree）
 2、二叉树遍历                                               （TreeTraversal）
+3、二叉树的深度                                             （MaxDepth）
 
 ### 综合：
 1、n 代表生成括号的对数                                       （SolutionBracket）
