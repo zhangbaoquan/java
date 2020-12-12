@@ -24,12 +24,15 @@
 ### 字符串：
 1、字符串替换                                               （ReplaceSpace）
 2、字符串翻转                                               （StringReverse）
+3、翻转单词顺序                                             （ReverseWord）
 
 ### 排序：
 
 ### 查找：
 1、找出数组中重复的数字                                       （FindNum）
 2、查找字符串数组中的最长公共前缀                               （SolutionPrefix）
+3、旋转数组的最小数字                                         （FindMiniNumber）
+4、数组中数字出现的次数(限定是1次)                              （FindOnceTimeNumber）
 
 ### 树：
 1、翻转二叉树                                               （ReverseTree）
