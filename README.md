@@ -44,3 +44,5 @@
 2、整数翻转                                                  （ReverseIntNum）
 3、输入这样的一个二维数组和一个整数，判断数组中是否含有该整数
 4、用两个栈实现一个队列                                        （StackQueueDemo）
+5、验证栈的压入、弹出序列                                      （StackSequences）
+6、把数字翻译成字符串(动态规划)                                 （TranslateNum）
