@@ -25,6 +25,8 @@
 1、字符串替换                                               （ReplaceSpace）
 2、字符串翻转                                               （StringReverse）
 3、翻转单词顺序                                             （ReverseWord）
+4、左旋字符串                                               （ReverseLeftWords）
+5、表示数值的字符串                                          （IsNumber）
 
 ### 排序：
 
