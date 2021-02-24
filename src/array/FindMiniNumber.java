@@ -5,7 +5,7 @@ package array;
  * @Description :
  * 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。
  * 输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。
- * 例如，数组 [3,4,5,1,2] 为 [1,2,3,4,5] 的一个旋转，该数组的最小值为1。
+ * 例如，数组[3,4,5,1,2] 为 [1,2,3,4,5] 的一个旋转，该数组的最小值为1。
  * <p>
  * 示例1：
  * 输入：[3,4,5,1,2]
@@ -41,7 +41,7 @@ public class FindMiniNumber {
             if (numbers[cur] > numbers[last]) {
                 // cur 是在左边的排序数组，例如 [3,4,5  ,1,2] ，pre = 3,cur = 5,last = 2
                 pre = cur + 1;
-            } else if (numbers[cur] < numbers[pre]) {
+            } else if (numbers[cur] < numbers[last]) {
                 // cur 是在右边的排序数组 例如 [1,2,3  ,4,5] ,pre = 1,cur = 3,last = 5
                 last = cur;
             } else {
@@ -49,8 +49,9 @@ public class FindMiniNumber {
                 // 即无法判断旋转点 x是在[per,cur]，还是在[cur+1,last],
                 // 自然也就无法使用二分法缩小区间，因为其旋转点不在[pre,last]区间，解决办法，执行last = last -1，缩小判断范围
 
-                // 思考：为啥num[cur]和num[pre] 作比较：
-                // 二分法的作用是判断当前cur在哪个排序数组中，从而缩小区间范围。在num[cur] > num[pre] 的情况下无法判断cur在哪个排序数组中，
+                // 思考：为啥不用num[cur]和num[pre] 作比较：
+                // 二分法的作用是判断当前cur在哪个排序数组中，从而缩小区间范围。
+                // 在num[cur] > num[pre] 的情况下无法判断cur在哪个排序数组中，因为数组是递增的。
                 // 例如 [3,4,5,1,2] 和 [1,2,3,4,5] ,按照 numbers[cur] > numbers[last] 比较，可以区分前一个在右边数组，
                 // 后面一个在左边数组。但按照num[cur] > num[pre] 来分析，都是左边数组
                 last --;
