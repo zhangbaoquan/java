@@ -46,7 +46,7 @@ public class TranslateNum {
      * @param num 目标数字
      * @return 结果
      */
-    public int translateNum(int num) {
+    public static int translateNum(int num) {
         String str = String.valueOf(num);
         int[] dp = new int[str.length() + 1];
         // 设置初始状态
@@ -64,5 +64,9 @@ public class TranslateNum {
             }
         }
         return dp[str.length()];
+    }
+
+    public static void main(String[] args){
+        translateNum(3215);
     }
 }
