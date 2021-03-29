@@ -51,8 +51,8 @@ public class ReverseIntNum {
             num /= 10;
 
             // 设置临界条件，
-            // 判断最大值时，利用最大值除以10，然后判断余数是否大于7，因为最大值是‭2147483647‬，
-            // 判断最小值时，利用最小值除以10，然后判断余数是否小于-8，因为最小值是-‭2147483648
+            // 判断最大值时，利用最大值除以10，然后判断余数是否大于7，因为最大值是2147483647，
+            // 判断最小值时，利用最小值除以10，然后判断余数是否小于-8，因为最小值是-2147483648
             if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && d > 7)) return 0;
             if (result < Integer.MIN_VALUE / 10 || (result == Integer.MIN_VALUE / 10 && d < -8)) return 0;
 
