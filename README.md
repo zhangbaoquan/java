@@ -27,6 +27,8 @@
 3、翻转单词顺序                                             （ReverseWord）
 4、左旋字符串                                               （ReverseLeftWords）
 5、表示数值的字符串                                          （IsNumber）
+6、二个字符串相加                                            （addString）
+7、字符串排列组合                                            （AssemblyString）
 
 ### 排序：
 
@@ -48,3 +50,4 @@
 4、用两个栈实现一个队列                                        （StackQueueDemo）
 5、验证栈的压入、弹出序列                                      （StackSequences）
 6、把数字翻译成字符串(动态规划)                                 （TranslateNum）
+7、求一个数字的二进制1的个数                                    （HasCount）
