@@ -1,5 +1,8 @@
 package tree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -131,5 +134,34 @@ public class TreeTraversal {
             System.out.print(stack2.pop().data);
         }
 
+    }
+
+    /**
+     * 二叉树层序遍历输出
+     * @param root
+     * @return
+     */
+    public static int[] levelOrder(TreeNode root) {
+        if (root == null){
+            return new int[0];
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            TreeNode node = queue.poll();
+            arrayList.add(node.data);
+            if (node.leftChild != null){
+                queue.add(node.leftChild);
+            }
+            if (node.rightChild != null){
+                queue.add(node.rightChild);
+            }
+        }
+        int[] r = new int[arrayList.size()];
+        for (int i = 0; i < arrayList.size(); i++) {
+            r[i] = arrayList.get(i);
+        }
+        return r;
     }
 }
