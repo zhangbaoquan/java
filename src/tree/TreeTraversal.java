@@ -1,9 +1,6 @@
 package tree;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * 二叉树的遍历，分前、中、后序遍历
@@ -138,8 +135,8 @@ public class TreeTraversal {
 
     /**
      * 二叉树层序遍历输出
-     * @param root
-     * @return
+     * @param root 二叉树
+     * @return 结果
      */
     public static int[] levelOrder(TreeNode root) {
         if (root == null){
@@ -163,5 +160,33 @@ public class TreeTraversal {
             r[i] = arrayList.get(i);
         }
         return r;
+    }
+
+    /**
+     * 二叉树层序遍历升级版
+     * @param root 二叉树
+     * @return 结果
+     */
+    public List<List<Integer>> levelOrder2(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        List<List<Integer>> lists = new ArrayList<>();
+        if (root != null){
+            queue.add(root);
+        }
+        while (!queue.isEmpty()){
+            ArrayList<Integer> arrayList = new ArrayList<>();
+            for (int i = queue.size();i>0;i--){
+                TreeNode node = queue.poll();
+                arrayList.add(node.data);
+                if (node.leftChild != null){
+                    queue.add(node.leftChild);
+                }
+                if (node.rightChild != null){
+                    queue.add(node.rightChild);
+                }
+            }
+            lists.add(arrayList);
+        }
+        return lists;
     }
 }
