@@ -50,18 +50,15 @@ public class StringReverse {
         int left = 0;
         int right = s.length -1;
         char temp;
-        int len = s.length;
-        for (int i = 0; i < len; i++) {
-            if (left < right){
-                temp = s[left];
-                s[left] = s[right];
-                s[right] = temp;
-                left++;
-                right--;
-            }
+        while (left < right){
+            temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+            left ++;
+            right --;
         }
-        for (int i = 0; i < len; i++) {
-            println(s[i]);
+        for (char c : s) {
+            println(c);
         }
 
     }
