@@ -63,10 +63,11 @@ public class TranslateNum {
                 dp[i] = dp[i - 1];
             }
         }
+        System.out.println(dp[str.length()]);
         return dp[str.length()];
     }
 
     public static void main(String[] args){
-        translateNum(3215);
+        translateNum(12258);
     }
 }

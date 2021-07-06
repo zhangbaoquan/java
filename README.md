@@ -52,3 +52,4 @@
 6、把数字翻译成字符串(动态规划)                                 （TranslateNum）
 7、求一个数字的二进制1的个数                                    （HasCount）
 8、交换数字                                                  （SwapNub）
+8、查找数组中第二大的数字                                       （FindSec2）
